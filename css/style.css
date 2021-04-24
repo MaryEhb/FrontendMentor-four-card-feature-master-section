@@ -81,6 +81,8 @@ h1, h2 {
   max-width: 400px;
   overflow: hidden;
   border-radius: 6px;
+  -webkit-box-shadow: 0px 13px 20px #8181811c;
+          box-shadow: 0px 13px 20px #8181811c;
 }
 
 @media (min-width: 850px) {
