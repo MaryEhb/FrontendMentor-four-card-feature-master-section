@@ -1,0 +1,97 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    outline: none
+
+body
+    font-size: 15px   
+    font-family: 'Poppins', sans-serif 
+    font-weight: 400
+    color: $grayish_blue
+    background: $light_gray
+
+h1, h2
+    color: $dark_blue
+    font-weight: 600
+
+.container
+    padding: 1rem
+
+.flex
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center    
+
+.heading
+    margin: 0 auto
+    text-align: center
+    padding: 2rem
+    max-width: max-content
+
+    h1:first-of-type
+        font-weight: 200
+
+    p
+        max-width: 500px
+        padding: 1rem
+
+.box-container
+    margin: 0 auto
+    max-width: max-content
+
+    @media (min-width: 700px)
+        flex-direction: row  
+
+    .box
+        background: #fff        
+        padding: 2rem 1.5rem
+        margin: 1rem
+        width: 100%
+        max-width: 400px
+        overflow: hidden
+        border-radius: 6px
+
+        @media (min-width: 850px)
+            width: 33%
+
+        &:first-of-type
+            border-top: solid 6px $cyan
+
+        &:last-of-type
+            border-top: solid 6px $blue    
+
+        p
+            max-width: 300px
+            padding: 1rem 0
+
+        img
+            float: right
+
+    .column
+        @media (min-width: 850px)
+            width: 33%
+            margin: 1rem
+        .box
+            &:first-of-type
+                border-top: solid 6px $red   
+
+            &:last-of-type
+                border-top: solid 6px $orange    
+    
+
+            @media (min-width: 850px)
+                margin: 2rem 0
+                width: 100%
+          
+
+.attribution
+    text-align: center
+    padding: 1rem
+
+    a
+        color: $dark_blue
+                
+        
+
