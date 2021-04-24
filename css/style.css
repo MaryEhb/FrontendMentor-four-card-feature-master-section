@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #a3a5ae;
+  background: #fafafa;
+}
+
+h1, h2 {
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heading {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.heading h1:first-of-type {
+  font-weight: 200;
+}
+
+.heading p {
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.box-container {
+  margin: 0 auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+@media (min-width: 700px) {
+  .box-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.box-container .box {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+@media (min-width: 850px) {
+  .box-container .box {
+    width: 33%;
+  }
+}
+
+.box-container .box:first-of-type {
+  border-top: solid 6px #45d3d3;
+}
+
+.box-container .box:nth-of-type(2) {
+  border-top: solid 6px #ea5353;
+}
+
+.box-container .box:nth-of-type(3) {
+  border-top: solid 6px #fcaf4a;
+}
+
+.box-container .box p {
+  max-width: 300px;
+  padding: 1rem 0;
+}
+
+.box-container .box img {
+  float: right;
+}
+
+@media (min-width: 850px) {
+  .box-container .column {
+    width: 33%;
+    margin: 1rem;
+  }
+}
+
+.box-container .column .box:first-of-type {
+  border-top: solid 6px #549ef2;
+}
+
+@media (min-width: 850px) {
+  .box-container .column .box {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+.attribution {
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: #4c4e61;
+}
+/*# sourceMappingURL=style.css.map */
